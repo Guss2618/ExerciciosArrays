@@ -12,7 +12,7 @@ public class Questao05
 
         System.out.println("a) Linhas: " + mat.length);
         System.out.println("b) Colunas: " + mat[0].length);
-        System.out.println("c) Valor 19 em mat[0][3] e mat[4][2]");
+        System.out.println("c) Valor 19 em mat[0][3] e tambem mat[4][2]");
         System.out.println("d) mat[1][1] = " + mat[1][1]);
         System.out.println("e) mat[2][0] + 1 = " + (mat[2][0] + 1));
         System.out.println("f) mat[3+1][3-1] = " + mat[3 + 1][3 - 1]);

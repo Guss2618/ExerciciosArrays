@@ -8,7 +8,7 @@ public class Questao02
 
         vet = new int[15];
         System.out.println("c) vet = new int[15];");
-        System.out.println("d) vet[5] = " + vet[5]);
+        System.out.println("d) vet[5] = " + vet[5] + " (conteudo zerado)");
 
         int tam = vet.length;
         System.out.println("e) tam = " + tam);

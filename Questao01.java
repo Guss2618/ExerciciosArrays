@@ -2,10 +2,20 @@ public class Questao01
 {
     public static void main(String[] args)
     {
-        int[] a = {507, 0, 147, 0, 300, 27, 888, -110, 0, 675};
+        int[] a = {507, 88, 147, 210, 300, 27, 888, -110, 45, 675};
 
-        System.out.println("a) Indice do terceiro elemento: " + 2);
-        System.out.println("b) Conteudo do terceiro elemento: " + a[2]);
+        System.out.println("a) Qual e o indice do terceiro elemento do array a?");
+        System.out.println("Resposta: " + 2);
+
+        System.out.println("b) Qual e o conteudo do terceiro elemento do array a?");
+        System.out.println("Resposta: " + a[2]);
+
+        System.out.println("Exemplo - imprimir indice e conteudo:");
+        for (int i = 0; i < a.length; i++)
+        {
+            System.out.println("Indice " + i + " = " + a[i]);
+        }
+
         System.out.println("c) Indice do primeiro elemento: " + 0);
         System.out.println("d) Conteudo do primeiro elemento: " + a[0]);
         System.out.println("e) Indice do valor 888: " + 6);

@@ -1,6 +1,6 @@
 public class Questao04
 {
-    public static double media(int[] array)
+    public double media(int[] array)
     {
         double soma = 0;
         for (int i = 0; i < array.length; i++)
@@ -10,7 +10,7 @@ public class Questao04
         return soma / array.length;
     }
 
-    public static void contarMultiplos(int[] array)
+    public void contarMultiplos(int[] array)
     {
         int quantidade = 0;
         for (int i = 0; i < array.length; i++)
@@ -25,10 +25,11 @@ public class Questao04
 
     public static void main(String[] args)
     {
+        Questao04 q = new Questao04();
         int[] numeros = {10, 15, 30, 7, 45, 8, 60, 11};
 
-        System.out.println("a) Media aritmetica: " + media(numeros));
+        System.out.println("a) Media aritmetica: " + q.media(numeros));
         System.out.print("b) ");
-        contarMultiplos(numeros);
+        q.contarMultiplos(numeros);
     }
 }

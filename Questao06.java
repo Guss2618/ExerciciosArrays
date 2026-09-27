@@ -17,7 +17,7 @@ public class Questao06
 
         notas = new double[2][2];
         letras = new char[2][2];
-        System.out.println("Matriz instancia: " + matriz.length + "x" + matriz[0].length);
-        System.out.println("notas e letras declaradas (e instanciadas no teste).");
+        System.out.println("Matriz: " + matriz.length + " linhas x " + matriz[0].length + " colunas");
+        System.out.println("notas e letras declaradas para teste.");
     }
 }

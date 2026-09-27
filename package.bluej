@@ -1,6 +1,6 @@
 #BlueJ package descriptor
 package.numDependencies=0
-package.numTargets=11
+package.numTargets=9
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
@@ -67,17 +67,3 @@ target9.type=ClassTarget
 target9.width=110
 target9.x=360
 target9.y=230
-target10.height=70
-target10.name=Arrays3B
-target10.showInterface=false
-target10.type=ClassTarget
-target10.width=110
-target10.x=500
-target10.y=230
-target11.height=70
-target11.name=MediaMatrix
-target11.showInterface=false
-target11.type=ClassTarget
-target11.width=120
-target11.x=70
-target11.y=130

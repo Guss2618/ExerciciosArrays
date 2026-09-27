@@ -3,6 +3,8 @@ public class Questao03
     public static void main(String[] args)
     {
         int[] v = new int[10];
+        double[] notas = new double[5];
+
         int impar = 1;
         for (int i = 0; i < v.length; i++)
         {
@@ -10,38 +12,31 @@ public class Questao03
             impar = impar + 2;
         }
 
-        System.out.println("a) Array v com numeros impares:");
+        System.out.println("a) Array v com numeros impares a partir de 1:");
         for (int i = 0; i < v.length; i++)
         {
             System.out.print(v[i] + " ");
         }
         System.out.println();
 
-        System.out.println("b) Digite as notas (intervalo [0.0, 10.0]):");
-        Questao03 arrays = new Questao03();
-        double[] notas = new double[3];
-        double temp = arrays.digitaNota(notas);
-        System.out.println("Printando Media fora do metodo " + temp);
-    }
-
-    public double digitaNota(double[] vet)
-    {
-        double soma = 0;
-        int count = 0;
-        double media = 0;
-        for (int i = 0; i < vet.length; i++)
+        System.out.println("b) Digite as notas no intervalo [0.0, 10.0]:");
+        for (int i = 0; i < notas.length; i++)
         {
-            vet[i] = Teclado.leDouble("Digite sua nota: ");
-            if (vet[i] < 0.0 || vet[i] > 10.0)
-            do {
-                System.out.print("Nota invalida! ");
-                vet[i] = Teclado.leDouble("\nDigite outra nota: ");
-            } while (vet[i] < 0.0 || vet[i] > 10.0);
-            soma = soma + vet[i];
-            count++;
+            do
+            {
+                notas[i] = Teclado.leDouble("Digite a nota " + (i + 1) + ": ");
+                if (notas[i] < 0.0 || notas[i] > 10.0)
+                {
+                    System.out.println("Nota invalida!");
+                }
+            } while (notas[i] < 0.0 || notas[i] > 10.0);
         }
-        media = soma / count;
-        System.out.println("Printando Media dentro do metodo " + media);
-        return media;
+
+        System.out.println("Notas armazenadas:");
+        for (int i = 0; i < notas.length; i++)
+        {
+            System.out.print(notas[i] + " ");
+        }
+        System.out.println();
     }
 }
