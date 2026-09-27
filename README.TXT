@@ -12,6 +12,8 @@ Classes:
 - Questao06 (declaracao e instanciação de matriz)
 - Questao07 (preencher matriz: impares e aleatorios)
 - Questao08 (media e multiplos de 3 e 5 - matriz)
+- Arrays3B (exemplo do professor - notas + media)
+- MediaMatrix (exemplo do professor - media da matriz)
 
 BlueJ: Project -> Open Project -> pasta ExerciciosArrays
 VS Code / terminal: javac *.java && java Questao01

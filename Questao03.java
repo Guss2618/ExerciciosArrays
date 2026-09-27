@@ -3,8 +3,6 @@ public class Questao03
     public static void main(String[] args)
     {
         int[] v = new int[10];
-        double[] notas = new double[5];
-
         int impar = 1;
         for (int i = 0; i < v.length; i++)
         {
@@ -20,21 +18,30 @@ public class Questao03
         System.out.println();
 
         System.out.println("b) Digite as notas (intervalo [0.0, 10.0]):");
-        for (int i = 0; i < notas.length; i++)
-        {
-            double nota;
-            do
-            {
-                nota = Teclado.leDouble("Nota " + (i + 1) + ": ");
-            } while (nota < 0.0 || nota > 10.0);
-            notas[i] = nota;
-        }
+        Questao03 arrays = new Questao03();
+        double[] notas = new double[3];
+        double temp = arrays.digitaNota(notas);
+        System.out.println("Printando Media fora do metodo " + temp);
+    }
 
-        System.out.println("Notas armazenadas:");
-        for (int i = 0; i < notas.length; i++)
+    public double digitaNota(double[] vet)
+    {
+        double soma = 0;
+        int count = 0;
+        double media = 0;
+        for (int i = 0; i < vet.length; i++)
         {
-            System.out.print(notas[i] + " ");
+            vet[i] = Teclado.leDouble("Digite sua nota: ");
+            if (vet[i] < 0.0 || vet[i] > 10.0)
+            do {
+                System.out.print("Nota invalida! ");
+                vet[i] = Teclado.leDouble("\nDigite outra nota: ");
+            } while (vet[i] < 0.0 || vet[i] > 10.0);
+            soma = soma + vet[i];
+            count++;
         }
-        System.out.println();
+        media = soma / count;
+        System.out.println("Printando Media dentro do metodo " + media);
+        return media;
     }
 }
